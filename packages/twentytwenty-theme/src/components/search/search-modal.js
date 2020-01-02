@@ -66,13 +66,13 @@ const SearchModal = ({ state, actions, libraries }) => {
         onClick={closeSearchModal}
       />
       <div
-        style={{
-          position: `absolute`,
-          top: 0,
-          right: 0,
-          left: 0,
-          zIndex: 9999
-        }}
+        css={css`
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 2000;
+        `}
       >
         {transitions.map(
           ({ item, key, props }) =>
